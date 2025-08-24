@@ -47,7 +47,7 @@ w1_hours = st.number_input("Hours worked (Week 1)", min_value=0, max_value=100, 
 w1_days = st.number_input("Days worked (Week 1)", min_value=0, max_value=7, value=0)
 w1_per_diem_choices = []
 for i in range(w1_days):
-    choice = st.selectbox(f"Per diem (Day {i+1}) - Week 1", list(PER_DIEM_OPTIONS.keys()), index=0, key=f"w1_{i}")
+    choice = st.selectbox(f"Per diem (Day {i+1}) - Week 1", list(PER_DIEM_OPTIONS.keys()), index=3, key=f"w1_{i}")
     w1_per_diem_choices.append(choice)
 
 # Week 2 inputs
@@ -56,7 +56,7 @@ w2_hours = st.number_input("Hours worked (Week 2)", min_value=0, max_value=100, 
 w2_days = st.number_input("Days worked (Week 2)", min_value=0, max_value=7, value=0)
 w2_per_diem_choices = []
 for i in range(w2_days):
-    choice = st.selectbox(f"Per diem (Day {i+1}) - Week 2", list(PER_DIEM_OPTIONS.keys()), index=2, key=f"w2_{i}")
+    choice = st.selectbox(f"Per diem (Day {i+1}) - Week 2", list(PER_DIEM_OPTIONS.keys()), index=3, key=f"w2_{i}")
     w2_per_diem_choices.append(choice)
 
 # Calculate for both weeks
