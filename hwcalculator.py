@@ -78,19 +78,19 @@ st.subheader("Monthly Projection")
 
 # Define month scenarios (4 weeks explicitly)
 scenarios = {
-    "Light Month": [
+    "Light Month (5 Days)": [
         {"hours": 60, "days": 5, "per_diem": "Breakfast + Lunch + Dinner"},
         {"hours": 0, "days": 0, "per_diem": "None"},
         {"hours": 0, "days": 0, "per_diem": "None"},
         {"hours": 0, "days": 0, "per_diem": "None"},
     ],
-    "Medium Month": [
+    "Medium Month (14 Days)": [
         {"hours": 84, "days": 7, "per_diem": "Breakfast + Lunch + Dinner"},
         {"hours": 0, "days": 0, "per_diem": "None"},
         {"hours": 84, "days": 7, "per_diem": "Breakfast + Lunch + Dinner"},
         {"hours": 0, "days": 0, "per_diem": "None"},
     ],
-    "Heavy Month": [
+    "Heavy Month (28 Days)": [
         {"hours": 84, "days": 7, "per_diem": "Breakfast + Lunch + Dinner"},
         {"hours": 84, "days": 7, "per_diem": "Breakfast + Lunch + Dinner"},
         {"hours": 84, "days": 7, "per_diem": "Breakfast + Lunch + Dinner"},
