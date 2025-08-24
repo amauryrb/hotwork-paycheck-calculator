@@ -43,8 +43,8 @@ tax_rate = st.sidebar.slider("Tax Rate (%)", 10, 25, 15) / 100
 
 # Week 1 inputs
 st.header("Week 1")
-w1_hours = st.number_input("Hours worked (Week 1)", min_value=0, max_value=100, value=84)
-w1_days = st.number_input("Days worked (Week 1)", min_value=0, max_value=7, value=7)
+w1_hours = st.number_input("Hours worked (Week 1)", min_value=0, max_value=100, value=0)
+w1_days = st.number_input("Days worked (Week 1)", min_value=0, max_value=7, value=0)
 w1_per_diem_choices = []
 for i in range(w1_days):
     choice = st.selectbox(f"Per diem (Day {i+1}) - Week 1", list(PER_DIEM_OPTIONS.keys()), index=0, key=f"w1_{i}")
